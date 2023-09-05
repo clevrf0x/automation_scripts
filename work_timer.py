@@ -28,7 +28,8 @@ def main() -> None:
             message=f"You have been working {session_time} Minutes, Take a break",
             timeout=10
         )
-    except KeyboardInterrupt:
+        print("Notified user successfully")
+except KeyboardInterrupt:
         print("Program terminated by user")
     except Exception as e:
         print(f"An error occurred: {str(e)}")
